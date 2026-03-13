@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/*Fontes - Google*/
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Configurações Gerais*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte1);
+}
+
+:root {
+    --cor1: #98FF90;
+    --cor2: #207E49;
+    --cor3: #103B23;
+
+    --fonte-dstq: 'Gloock', Arial, Helvetica, sans-serif;
+    --fonte1: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+/*Cabeçalho*/
+    /*Config. do header*/
+header {
+    padding: 40px 20px 20px;
+    text-align: center;
+    color: white;
+
+    min-width: 270px;
+
+    background-color: var(--cor3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+header h1 {
+    font-family: var(--fonte-dstq);
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.31);
+}
+
+header p {
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.156);
+}
+
+    /*Transition e config. p/ nav*/
+nav {
+    padding: 10px 0px;
+    border: 1.5px solid white;
+    border-radius: 6px;
+    margin: auto;
+
+    max-width: 540px;
+
+    background-image: linear-gradient(to right, #14492B, #207E49, #14492B);
+    background-size: 200%;
+    background-position: left;
+    transition: all 0.6s;
+}
+
+nav:hover {
+    background-position: right;
+}
+
+    /*Transition p/ nav > links*/
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+    /*Espaçamento entre links*/
+a.margin {
+    margin-right: 25px;
+}
+
+/*Conteúdo*/
+main {
+    padding: 40px 20px 20px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+
+    min-width: 270px;
+    max-width: 1000px;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+    /*Config. dos textos*/
+main h1 {
+    margin-bottom: 10px;
+    text-align: center;
+
+    font-family: var(--fonte-dstq);
+    font-weight: normal;
+    color: var(--cor3);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.103);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+h4#dandroids {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    margin: 20px 0px;
+    padding: 8px 20px;
+    border-radius: 6px 0px;
+
+    font-size: 1.3em;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.118);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.212);
+    
+}
+
+main strong {
+    color: var(--cor2);
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor3);
+    background-color: #97ff904b;
+    font-weight: bold;
+
+    transition: all 0.6s;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a::before {
+    content: "🔗";
+}
+
+    /*Config. das imagens*/
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+img#pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+    /*Aside*/
+aside {
+    border-radius: 10px;
+    background-color: var(--cor1);
+    margin: 10px 0px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.175);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+
+    padding: 10px 20px;
+    margin: -20px -20px 0px -20px
+}
+
+    /*Div - Vídeo*/
+div {
+    padding: 20px 0px;
+    padding-bottom: 56.5%;
+    margin: 20px -20px;
+    text-align: center;
+
+    position: relative;
+    background-color: var(--cor3);
+}
+
+iframe {
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.175);
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*Rodapé*/
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: 270px;
+
+    background-color: var(--cor3);
+}
