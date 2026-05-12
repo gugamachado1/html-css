@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+html, body{
     background-color: lightgray;
 }
 
@@ -14,24 +14,48 @@ body {
 
 header {
     background-color: rgb(157, 157, 157);
-    padding-top: 20px;
-    padding-bottom: 8px;
 }
 
-h1 {
+header > h1 {
     text-align: center;
-    margin-bottom: 30px;
+    padding: 10px;
 }
 
-li {
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
+i#burger {
+    background-color: rgb(48, 48, 48);
     color: white;
-    padding: 8px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+i#burger:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
     background-color: rgb(78, 78, 78);
+    border-top: 2px solid rgb(163, 163, 163);
+
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
 }
 
 /*----------------------------------------*/
@@ -39,14 +63,19 @@ a {
 main {
     background-color: white;
     border-radius: 10px;
-    width: 80%;
+    width: 90vw;
 
-    text-align: justify;
     margin: auto;
     margin-top: 10px;
     padding: 15px;
 }
 
-h2, p {
-    margin-bottom: 15px;
+article > h2 {
+    margin-bottom: 20px;
+}
+
+article > p {
+    margin-bottom: 20px;
+    text-indent: 20px;
+    text-align: justify;
 }
