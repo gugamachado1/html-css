@@ -3,9 +3,17 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    font-size: 1em;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Configurações para o Header*/
 header {
     background-color: rgb(162, 162, 162);
 
@@ -14,13 +22,11 @@ header {
 
     display: flex;
     flex-flow: row wrap;
-
     justify-content: space-between;
 }
 
 header > div {
     margin: 10px 0px;
-
     align-content: center;
 }
 
@@ -37,6 +43,7 @@ header > div > a {
     border-radius: 5px;
 }
 
+/*Configurações para o Conteúdo Principal (Main)*/
 main {
     background-color: rgb(237, 237, 237);
     border-radius: 10px;

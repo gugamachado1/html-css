@@ -9,6 +9,8 @@ Desktop: 1024px até 1440px
 Grandes telas: acima de 1440px
 */
 
+/*Configuração para fazer menu ficar em forma de lista quando estiver em telas */
+
 @media screen and (max-width: 600px){
     header {
         padding: 0px;
