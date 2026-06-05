@@ -14,20 +14,27 @@ Grandes telas: acima de 1440px
 @media screen and (max-width: 600px){
     header {
         padding: 0px;
-
-        display: flex;
         flex-flow: column nowrap;
     }
 
-    header > div {
-        margin-bottom: 0px;
+    header > div#title {
+        margin-right: 0px;
+        margin: 20px 0px;
+
         text-align: center;
     }
+
+    header > nav {
+        flex-flow: column nowrap;
+        margin-bottom: 0px;
+    }
     
-    header > div > a {
-        display: block;
+    header > nav > a {
+        text-align: center;
 
         border: 1px solid black;
         border-radius: 0px;
+
+        margin-right: 0px
     }
 }
