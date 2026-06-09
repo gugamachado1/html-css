@@ -13,9 +13,14 @@ body {
     height: 100vh;
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
 }
 
 header,section.normal {
@@ -54,4 +59,18 @@ article > div.media {
     flex: 1 0 400px;
 
     border: 1px dashed red;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+
+    width: 90%;
 }
